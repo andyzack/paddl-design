@@ -52,7 +52,7 @@ class App extends Component {
               <div className="tc mt4 mt5-m mt6-l ph3">
                 <h1 className="f2 f1-l fw2 white-90 mb0 lh-title">Student's Portal</h1>
                 <h2 className="fw1 f3 white-80 mt3 mb4">Connect to real employment experiences</h2>
-                <button className="f4 no-underline grow v-mid bg-dark-gray white ba b--light-blue br3 ph4 pv3 mb3" 
+                <button className="primary-button f4 no-underline grow v-mid bg-dark-gray white ba b--light-blue br3 ph4 pv3 mb3" 
                   onClick={
                     e => {
                       this.showModal();

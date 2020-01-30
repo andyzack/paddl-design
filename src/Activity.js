@@ -113,7 +113,7 @@ class Activity extends Component {
               </div>
 
               <div className="h2 mt4 mb0 f5 light-purple">{this.renderSubComp()}</div>
-              <button className="f4 no-underline grow v-mid white bg-transparent bw1 ba1 b--light-blue br3 ph4 pv3 mb3 mt1" onClick={this.handleSubmit.bind(this, 'openactivity')}>
+              <button className="primary-button f4 no-underline grow v-mid white bg-transparent bw1 ba1 b--light-blue br3 ph4 pv3 mb3 mt1" onClick={this.handleSubmit.bind(this, 'openactivity')}>
                 Continue
               </button>
               
