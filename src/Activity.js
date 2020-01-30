@@ -69,7 +69,7 @@ class Activity extends Component {
           {/* ACTIVITY HEADING SECTION */}
           <section className="bg-gradient-blue-title">
             <div className="flex justify-center items-center pt5">
-              <button className="f4 fw2 no-underline grow v-mid light-blue bg-transparent bn br3 ph2 pv1 absolute right-2 top-2 " 
+              <button className="f4 fw2 no-underline grow v-mid white-50 bg-transparent br3 bn ph2 pv1 absolute right-2 top-2 open-sans" 
                 onClick={e => {
                   this.onClose(e);
                 }}
