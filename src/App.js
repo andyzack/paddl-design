@@ -8,7 +8,6 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      render:'',
       show: false,
       totaldays: 287,
       deltadays: +26,
@@ -21,11 +20,7 @@ class App extends Component {
       categoryicon: iconcategory,
     };
   }
-
-  handleSubmit(obj, e) {
-    this.setState({render:obj});        
-  }
-
+  
   showModal = e => {
     this.setState({
       show: !this.state.show
