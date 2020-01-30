@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Activity from './Activity.js';
+import Activity from './modules/Activity';
 import './assets/sass/index.scss';
 import logo from './assets/images/logo.png';
 import iconcategory from './assets/images/icon-category.png';
