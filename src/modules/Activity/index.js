@@ -6,22 +6,19 @@ class Activity extends Component {
     super(props);
     this.state = {
       render:'',
-      totaldays: 287,
-      deltadays: +26,
-      totalxp: 3244,
-      deltaxp: -420,
-      activityUpdateStatus: '',
-      title: "Bachelor of Communications (Media)",
-      subtitle: "Bachelor Degree",
-      category: "Education",
-      categoryicon: "[IMG]",
     };
   }
 
   static defaultProps = {
-    id: "",
-    modalClass: "",
-    modalSize: "md"
+    totaldays: 287,
+    deltadays: +26,
+    totalxp: 3244,
+    deltaxp: -420,
+    activityUpdateStatus: '',
+    title: "Bachelor of Communications (Media)",
+    subtitle: "Bachelor Degree",
+    category: "Education",
+    categoryicon: "[IMG]",
   };
 
   handleSubmit(obj, e) {
@@ -139,9 +136,9 @@ Activity.propTypes = {
   category: PropTypes.string.isRequired,
   subtitle: PropTypes.string,
   totaldays: PropTypes.number.isRequired,
-  totalxp: PropTypes.string,
+  totalxp: PropTypes.number,
   deltadays: PropTypes.number.isRequired,
-  deltaxp: PropTypes.string,
+  deltaxp: PropTypes.number,
 }
 
 export default Activity;

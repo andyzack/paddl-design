@@ -67,7 +67,7 @@ class App extends Component {
               </div>
             </div>
           </div>
-      </header>
+        </header>
       </div>
     )
   }
