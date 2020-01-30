@@ -21,11 +21,11 @@ class Activity extends Component {
     categoryicon: "[IMG]",
   };
 
-  handleSubmit(obj, e) {
+  handleSubmit = (obj, e) => {
     this.setState({render:obj});
   }
 
-  renderSubComp() {
+  renderSubComp = () => {
     switch(this.state.render){
       case 'openactivity':
         return (
@@ -35,23 +35,13 @@ class Activity extends Component {
     }
   }
 
-  removeSubComp() {
-    this.setState({ render: false });
-  }
-
-  onClose = e => {
+  onClose = (e) => {
     this.props.onClose && this.props.onClose(e);
     this.setState({ render: false });
   };
 
-  deltadayssign() {
-    if (this.props.data.deltadays > 0) {
-      return '+'
-    }
-  }
-
-  deltaxpsign() {
-    if (this.props.data.deltaxp > 0) {
+  addPlus = (e) => {
+    if (e > 0) {
       return '+'
     }
   }
@@ -97,7 +87,7 @@ class Activity extends Component {
                   <span className="f4 icon-clock pl2">{this.props.data.totaldays}</span> days
                 </div>
                 <div className="dtc w-50 nowrap tr f4">
-                <span className="light-purple f3">{this.deltadayssign()}{this.props.data.deltadays}</span> days
+                <span className="light-purple f3">{this.addPlus(this.props.data.deltadays)}{this.props.data.deltadays}</span> days
                 </div>
               </div>
               <div className="dt center w5">
@@ -105,12 +95,12 @@ class Activity extends Component {
                   <span className="f4 icon-arrow-up pl2">{this.props.data.totalxp}</span> XP
                 </div>
                 <div className="dtc w-50 nowrap tr f4">
-                  <span className="light-purple f3">{this.deltaxpsign()}{this.props.data.deltaxp}</span> XP
+                  <span className="light-purple f3">{this.addPlus(this.props.data.deltaxp)}{this.props.data.deltaxp}</span> XP
                 </div>
               </div>
 
               <div className="h2 mt4 mb0 f5 light-purple">{this.renderSubComp()}</div>
-              
+
               <button className="primary-button f4 no-underline grow v-mid white bg-transparent bw1 ba1 b--light-blue br3 ph4 pv3 mb3 mt1"
                 onClick={
                   this.handleSubmit.bind(this, 'openactivity')
