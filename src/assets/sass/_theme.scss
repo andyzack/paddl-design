@@ -17,4 +17,11 @@ $complimentary: $light-purple;
 $bg-gradient-blue: $blue;
 $bg-gradient-navy: $navy;
 
+// CUSTOM FONTS
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap);
+
+$open-sans: 'Open Sans', sans-serif;
+
+.open-sans 	{ font-family: $open-sans; 	}
+
 @import "global-combos";

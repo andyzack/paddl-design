@@ -69,12 +69,12 @@ class Activity extends Component {
           {/* ACTIVITY HEADING SECTION */}
           <section className="bg-gradient-blue-title">
             <div className="flex justify-center items-center pt5">
-              <span className="absolute right-2 top-2 light-blue f4 pointer grow" 
+              <button className="f4 fw2 no-underline grow v-mid light-blue bg-transparent bn br3 ph2 pv1 absolute right-2 top-2 " 
                 onClick={e => {
                   this.onClose(e);
                 }}
               >X
-              </span>
+              </button>
               <div className="pa0 tl nb4 mt2">
                 <img
                   src={this.props.data.categoryicon}
@@ -113,7 +113,7 @@ class Activity extends Component {
               </div>
 
               <div className="h2 mt4 mb0 f5 light-purple">{this.renderSubComp()}</div>
-              <button className="f4 no-underline grow v-mid white bg-transparent ba b--light-blue br3 ph4 pv3 mb3 mt1" onClick={this.handleSubmit.bind(this, 'openactivity')}>
+              <button className="f4 no-underline grow v-mid white bg-transparent bw1 ba1 b--light-blue br3 ph4 pv3 mb3 mt1" onClick={this.handleSubmit.bind(this, 'openactivity')}>
                 Continue
               </button>
               

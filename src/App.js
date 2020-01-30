@@ -34,8 +34,8 @@ class App extends Component {
   
   render() {
     return (
-      <div className="page vh-100 bg-gradient-blue dt w-100 bg-right no-repeat cover">
-        <header className="sans-serif">
+      <div className="page vh-100 bg-gradient-blue dt w-100 bg-right no-repeat cover relative open-sans">
+        <header>
           <div className="cover bg-left bg-center bg-image">
             <div className="bg-black-80 pb5 pb6-m pb7-l">
               <nav className="dt w-100 mw8 center">
