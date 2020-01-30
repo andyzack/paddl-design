@@ -1,0 +1,258 @@
+
+// Converted Variables
+
+
+/*
+
+   LINE HEIGHT / LEADING
+
+   line-height: 0; // REQUIRED ON IMAGES TO AVOID 1PX SPACING
+
+   Docs: http://tachyons.io/docs/typography/line-height
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+
+$helvetica: helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+
+  .lh-0   { line-height: 0; }
+  .tj     { text-align: justify; }
+  .mw8-5  { max-width: 80rem; }
+  .mw-1200  { max-width: 1200px; }
+  .w-16   { width: 16.666%; }
+  .h-60 { height: 60%; }
+  .textshadow { text-shadow: 0 0 8px rgba(0,0,0,0.2); }
+  .textshadow-1 { text-shadow: 1px 1px 2px #333; }
+
+  /* COORDINATES extend _coordinates.scss */
+  .top--3    { top:    -4rem; }
+  .right--3  { right:  -4rem; }
+  .bottom--3 { bottom: -4rem; }
+  .left--3   { left:   -4rem; }
+
+  .top--4    { top:    -8rem; }
+  .right--4  { right:  -8rem; }
+  .bottom--4 { bottom: -8rem; }
+  .left--4   { left:   -8rem; }
+
+  /* BACKGROUND extend _background-position.scss _*/
+  .bg-top-right {    
+    background-repeat: no-repeat; 
+    background-position: top right;    
+  }
+  .bg-top-left {   
+    background-repeat: no-repeat; 
+    background-position: top left;   
+  }
+  .bg-bottom-right {  
+    background-repeat: no-repeat; 
+    background-position: bottom right;  
+  }
+  .bg-bottom-left { 
+    background-repeat: no-repeat; 
+    background-position: bottom left; 
+  }
+  
+  /* Hide child & reveal on hover extend _hovers.scss: select items that are direct children only */
+  .hide-child-direct > .child {
+    opacity: 0;
+    transition: opacity .15s ease-in;
+    display: none;
+  }
+  .hide-child-direct:hover  > .child,
+  .hide-child-direct:focus  > .child,
+  .hide-child-direct:active > .child {
+    display: block;
+    opacity: 1;
+    transition: opacity .15s ease-in;
+  }
+
+@media #{$breakpoint-not-small} {
+  .lh-0-ns { line-height: 0; }
+  .tj-ns   { text-align: justify; }
+  .mw8-5-ns  { max-width: 80rem; }
+  .mw-1200-ns  { max-width: 1200px; }
+  .w-16-ns   { width: 16.666%; }
+  .h-60-ns { height: 60%; }
+  .textshadow-ns { text-shadow: 0 0 8px rgba(0,0,0,0.2); }
+  .textshadow-1-ns { text-shadow: 1px 1px 2px #333; }
+
+  /* COORDINATES extend _coordinates.scss */
+  .top--3-ns    { top:    -4rem; }
+  .right--3-ns  { right:  -4rem; }
+  .bottom--3-ns { bottom: -4rem; }
+  .left--3-ns   { left:   -4rem; }
+
+  .top--4-ns    { top:    -8rem; }
+  .right--4-ns  { right:  -8rem; }
+  .bottom--4-ns { bottom: -8rem; }
+  .left--4-ns   { left:   -8rem; }
+
+  /* BACKGROUND extend _background-position.scss _*/
+  .bg-top-right-ns {    
+    background-repeat: no-repeat; 
+    background-position: top right;    
+  }
+  .bg-top-left-ns {   
+    background-repeat: no-repeat; 
+    background-position: top left;   
+  }
+  .bg-bottom-right-ns {  
+    background-repeat: no-repeat; 
+    background-position: bottom right;  
+  }
+  .bg-bottom-left-ns { 
+    background-repeat: no-repeat; 
+    background-position: bottom left; 
+  }
+
+  .bg-white-ns {
+    background-color: #fff;
+  }
+
+  /* Hide child & reveal on hover extend _hovers.scss: select items that are direct children only */
+  .hide-child-direct-ns > .child {
+    opacity: 0;
+    transition: opacity .15s ease-in;
+    display: none;
+  }
+  .hide-child-direct-ns:hover  > .child,
+  .hide-child-direct-ns:focus  > .child,
+  .hide-child-direct-ns:active > .child {
+    display: block;
+    opacity: 1;
+    transition: opacity .15s ease-in;
+  }
+}
+
+@media #{$breakpoint-medium} {
+  .lh-0-m { line-height: 0; }
+  .tj-m   { text-align: justify; }
+  .mw8-5-m  { max-width: 80rem; }
+  .mw-1200-m  { max-width: 1200px; }
+  .w-16-m   { width: 16.666%; }
+  .h-60-m { height: 60%; }
+  .textshadow-m { text-shadow: 0 0 8px rgba(0,0,0,0.2); }
+  .textshadow-1-m { text-shadow: 1px 1px 2px #333; }
+
+  /* COORDINATES extend _coordinates.scss */
+  .top--3-m    { top:    -4rem; }
+  .right--3-m  { right:  -4rem; }
+  .bottom--3-m { bottom: -4rem; }
+  .left--3-m   { left:   -4rem; }
+
+  .top--4-m    { top:    -8rem; }
+  .right--4-m  { right:  -8rem; }
+  .bottom--4-m { bottom: -8rem; }
+  .left--4-m   { left:   -8rem; }
+
+  /* BACKGROUND extend _background-position.scss _*/
+  .bg-top-right-m {    
+    background-repeat: no-repeat; 
+    background-position: top right;    
+  }
+  .bg-top-left-m {   
+    background-repeat: no-repeat; 
+    background-position: top left;   
+  }
+  .bg-bottom-right-m {  
+    background-repeat: no-repeat; 
+    background-position: bottom right;  
+  }
+  .bg-bottom-left-m { 
+    background-repeat: no-repeat; 
+    background-position: bottom left; 
+  }
+
+  .bg-white-m {
+    background-color: #fff;
+  }
+
+  /* Hide child & reveal on hover extend _hovers.scss: select items that are direct children only */
+  .hide-child-direct-m > .child {
+    opacity: 0;
+    transition: opacity .15s ease-in;
+    display: none;
+  }
+  .hide-child-direct-m:hover  > .child,
+  .hide-child-direct-m:focus  > .child,
+  .hide-child-direct-m:active > .child {
+    display: block;
+    opacity: 1;
+    transition: opacity .15s ease-in;
+  }
+}
+
+@media #{$breakpoint-large} {
+  .lh-0-l { line-height: 0; }
+  .tj-l   { text-align: justify; }
+  .mw8-5-l  { max-width: 80rem; }
+  .mw-1200-l  { max-width: 1200px; }
+  .w-16-l   { width: 16.666%; }
+  .h-60-l { height: 60%; }
+  .textshadow-l { text-shadow: 0 0 8px rgba(0,0,0,0.2); }
+  .textshadow-1-l { text-shadow: 1px 1px 2px #333; }
+
+  /* COORDINATES extend _coordinates.scss */
+  .top--3-l    { top:    -4rem; }
+  .right--3-l  { right:  -4rem; }
+  .bottom--3-l { bottom: -4rem; }
+  .left--3-l   { left:   -4rem; }
+
+  .top--4-l    { top:    -8rem; }
+  .right--4-l  { right:  -8rem; }
+  .bottom--4-l { bottom: -8rem; }
+  .left--4-l   { left:   -8rem; }
+
+  /* BACKGROUND extend _background-position.scss _*/
+  .bg-top-right-l {    
+    background-repeat: no-repeat; 
+    background-position: top right;    
+  }
+  .bg-top-left-l {   
+    background-repeat: no-repeat; 
+    background-position: top left;   
+  }
+  .bg-bottom-right-l {  
+    background-repeat: no-repeat; 
+    background-position: bottom right;  
+  }
+  .bg-bottom-left-l { 
+    background-repeat: no-repeat; 
+    background-position: bottom left; 
+  }
+
+  .bg-white-l {
+    background-color: #fff;
+  }
+
+  /* Hide child & reveal on hover extend _hovers.scss: select items that are direct children only */
+  .hide-child-direct-l > .child {
+    opacity: 0;
+    transition: opacity .15s ease-in;
+    display: none;
+  }
+  .hide-child-direct-l:hover  > .child,
+  .hide-child-direct-l:focus  > .child,
+  .hide-child-direct-l:active > .child {
+    display: block;
+    opacity: 1;
+    transition: opacity .15s ease-in;
+  }
+}
+
+
+// Custom Media Query Variables
+
+
+
+// _______ ______          __  __              _____ ____  _    _ _____ _____  ______
+// |__   __|  ____|   /\   |  \/  |       /\   / ____/ __ \| |  | |_   _|  __ \|  ____|
+//    | |  | |__     /  \  | \  / |      /  \ | |   | |  | | |  | | | | | |__) | |__
+//    | |  |  __|   / /\ \ | |\/| |     / /\ \| |   | |  | | |  | | | | |  _  /|  __|
+//    | |  | |____ / ____ \| |  | |    / ____ \ |___| |__| | |__| |_| |_| | \ \| |____
+//    |_|  |______/_/    \_\_|  |_|   /_/    \_\_____\___\_\\____/|_____|_|  \_\______|
