@@ -9,7 +9,6 @@ class App extends Component {
     super(props);
     this.state = {
       show: false,
-      addClass: false,
       totaldays: 287,
       deltadays: +26,
       totalxp: 3244,
@@ -25,7 +24,6 @@ class App extends Component {
   showModal = e => {
     this.setState({
       show: !this.state.show,
-      addClass: !this.state.addClass,
     });
   };
   
