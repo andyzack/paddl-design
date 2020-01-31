@@ -46,3 +46,49 @@
 .primary-button {
   width: 220px;
 }
+
+.modal {
+  z-index:0;
+  transform:scale(1);
+  animation: moveUp .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+
+  &.out {
+    animation: moveDown .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    transform:translateY(1200px);
+  }
+  100% {
+    transform:translateY(0);
+  }
+}
+
+@keyframes slideUpLarge {
+  0% {
+    transform:translateY(0%);
+  }
+  100% {
+    transform:translateY(-100%);
+  }
+}
+
+@keyframes moveDown {
+  0% {
+    transform:translateY(0px);
+  }
+  100% {
+    transform:translateY(150px);
+  }
+}
+
+@keyframes slideDownLarge {
+  0% {
+    transform:translateY(-100%);
+  }
+  100% {
+    transform:translateY(0%);
+  }
+}

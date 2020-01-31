@@ -46,12 +46,19 @@ class Activity extends Component {
     }
   }
 
+  addClass = (e) => {
+    if (!e) {
+      return ' out '
+    }
+  }
+
   render() {
     if(!this.props.show){
       return null;
     }
+
     return (
-      <div className="absolute top-0 left-0 right-0 bottom-0 bg-gradient-blue light-blue san-serif center tc">
+      <div className={this.addClass(this.props.show) + " modal absolute top-0 left-0 right-0 bottom-0 bg-gradient-blue light-blue san-serif center tc"}>
         <div className="w-100 center">
           {/* ACTIVITY HEADING SECTION */}
           <section className="bg-gradient-blue-title">

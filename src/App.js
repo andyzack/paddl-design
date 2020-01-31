@@ -9,6 +9,7 @@ class App extends Component {
     super(props);
     this.state = {
       show: false,
+      addClass: false,
       totaldays: 287,
       deltadays: +26,
       totalxp: 3244,
@@ -23,7 +24,8 @@ class App extends Component {
   
   showModal = e => {
     this.setState({
-      show: !this.state.show
+      show: !this.state.show,
+      addClass: !this.state.addClass,
     });
   };
   
@@ -57,7 +59,9 @@ class App extends Component {
                   Activity updates
                 </button>
 
-                <Activity data={this.state} onClose={this.showModal} show={this.state.show} />
+                <div className={this.state.show? 'modal-active':''}>
+                  <Activity data={this.state} onClose={this.showModal} show={this.state.show} />
+                </div>
 
               </div>
             </div>
