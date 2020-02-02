@@ -1,6 +1,6 @@
 {
   "name": "my-app",
-  "homepage": ".",
+  "homepage": "http://andyzack.github.io/paddl-design",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -35,5 +35,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
